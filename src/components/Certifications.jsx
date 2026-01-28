@@ -16,8 +16,8 @@ export default function Certifications() {
             <div className="flex items-start gap-6">
               
               {/* Icon */}
-              <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-purple-600 rounded-2xl flex items-center justify-center">
+              <div className="shrink-0">
+                <div className="w-16 h-16 bg-linear-to-br from-cyan-500 to-purple-600 rounded-2xl flex items-center justify-center">
                   <svg
                     className="w-8 h-8 text-white"
                     fill="none"

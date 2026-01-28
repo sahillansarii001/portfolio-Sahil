@@ -17,7 +17,7 @@ export default function Skills() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
 
           {/* HTML */}
-          <div className="group relative bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-orange-300">
+          <div className="group relative bg-linear-to-br from-orange-50 to-red-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-orange-300">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
                 <svg className="w-10 h-10 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
@@ -30,7 +30,7 @@ export default function Skills() {
           </div>
 
           {/* CSS */}
-          <div className="group relative bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-blue-300">
+          <div className="group relative bg-linear-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-blue-300">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
                 <svg className="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
@@ -43,7 +43,7 @@ export default function Skills() {
           </div>
 
           {/* Tailwind */}
-          <div className="group relative bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-cyan-300">
+          <div className="group relative bg-linear-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-cyan-300">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
                 <svg className="w-10 h-10 text-cyan-500" fill="currentColor" viewBox="0 0 24 24">
@@ -56,7 +56,7 @@ export default function Skills() {
           </div>
 
           {/* JavaScript */}
-          <div className="group relative bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-yellow-300">
+          <div className="group relative bg-linear-to-br from-yellow-50 to-orange-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-yellow-300">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
                 <svg className="w-10 h-10 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
@@ -69,7 +69,7 @@ export default function Skills() {
           </div>
 
           {/* C Programming */}
-          <div className="group relative bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-blue-300">
+          <div className="group relative bg-linear-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-blue-300">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
                 {/* FULL SVG — unchanged */}
@@ -83,7 +83,7 @@ export default function Skills() {
           </div>
 
           {/* Figma */}
-          <div className="group relative bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-purple-300">
+          <div className="group relative bg-linear-to-br from-purple-50 to-pink-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-purple-300">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
                 <svg className="w-10 h-10" viewBox="0 0 24 24">
@@ -100,7 +100,7 @@ export default function Skills() {
           </div>
 
           {/* Canva */}
-          <div className="group relative bg-gradient-to-br from-cyan-50 to-teal-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-cyan-300">
+          <div className="group relative bg-linear-to-br from-cyan-50 to-teal-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-cyan-300">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
                 <span className="text-cyan-600 font-bold text-xl">C</span>
@@ -111,7 +111,7 @@ export default function Skills() {
           </div>
 
           {/* WordPress */}
-          <div className="group relative bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-blue-300">
+          <div className="group relative bg-linear-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-blue-300">
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
                 <svg className="w-10 h-10 text-blue-800" fill="currentColor" viewBox="0 0 24 24">

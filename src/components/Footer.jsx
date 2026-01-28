@@ -7,7 +7,7 @@ export default function Footer() {
           {/* Column 1 */}
           <div className="md:col-span-2">
             <h3 className="text-3xl font-bold mb-4">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-purple-400">
                 Sahil Ansari
               </span>
             </h3>
