@@ -14,7 +14,6 @@ export default function Certifications() {
         <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 border-2 border-gray-100">
             <div className="flex items-start gap-6">
-              
               {/* Icon */}
               <div className="shrink-0">
                 <div className="w-16 h-16 bg-linear-to-br from-cyan-500 to-purple-600 rounded-2xl flex items-center justify-center">
@@ -68,7 +67,6 @@ export default function Certifications() {
                   </svg>
                 </a>
               </div>
-
             </div>
           </div>
         </div>

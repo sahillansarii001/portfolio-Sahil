@@ -5,7 +5,6 @@ export default function NavBar() {
     <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-lg z-50 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-
           {/* Logo */}
           <a
             href="#home"
@@ -16,19 +15,34 @@ export default function NavBar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            <a
+              href="#home"
+              className="text-gray-700 hover:text-cyan-500 transition-colors font-medium"
+            >
               Home
             </a>
-            <a href="#about" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            <a
+              href="#about"
+              className="text-gray-700 hover:text-cyan-500 transition-colors font-medium"
+            >
               About
             </a>
-            <a href="#projects" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            <a
+              href="#projects"
+              className="text-gray-700 hover:text-cyan-500 transition-colors font-medium"
+            >
               Projects
             </a>
-            <a href="#skills" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            <a
+              href="#skills"
+              className="text-gray-700 hover:text-cyan-500 transition-colors font-medium"
+            >
               Skills
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-cyan-500 transition-colors font-medium">
+            <a
+              href="#contact"
+              className="text-gray-700 hover:text-cyan-500 transition-colors font-medium"
+            >
               Contact
             </a>
             <a
@@ -55,7 +69,6 @@ export default function NavBar() {
               />
             </svg>
           </div>
-
         </div>
       </div>
     </nav>

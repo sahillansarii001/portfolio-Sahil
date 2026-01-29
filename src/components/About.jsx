@@ -2,7 +2,6 @@ export default function About() {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-
         {/* Section Heading */}
         <div className="text-center mb-16">
           <span className="text-cyan-500 font-semibold text-sm tracking-wide uppercase">
@@ -14,14 +13,11 @@ export default function About() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-
           {/* Left Column */}
           <div className="space-y-6">
             <p className="text-gray-700 text-lg leading-relaxed">
               I&apos;m a passionate{" "}
-              <span className="font-semibold text-cyan-600">
-                Web Developer
-              </span>{" "}
+              <span className="font-semibold text-cyan-600">Web Developer</span>{" "}
               and{" "}
               <span className="font-semibold text-purple-600">
                 UI/UX Designer
@@ -75,7 +71,6 @@ export default function About() {
 
           {/* Right Column */}
           <div className="space-y-6">
-
             {/* Education Card */}
             <div className="bg-linear-to-br from-cyan-50 to-purple-50 rounded-2xl p-8 border border-cyan-100">
               <div className="flex items-start gap-4">
@@ -111,9 +106,7 @@ export default function About() {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 hover:border-cyan-500 transition-colors">
-                <div className="text-3xl font-bold text-cyan-500 mb-2">
-                  9+
-                </div>
+                <div className="text-3xl font-bold text-cyan-500 mb-2">9+</div>
                 <div className="text-gray-600 font-medium">
                   Projects Completed
                 </div>
@@ -123,9 +116,7 @@ export default function About() {
                 <div className="text-3xl font-bold text-purple-500 mb-2">
                   8+
                 </div>
-                <div className="text-gray-600 font-medium">
-                  Skills Mastered
-                </div>
+                <div className="text-gray-600 font-medium">Skills Mastered</div>
               </div>
             </div>
 
@@ -149,7 +140,6 @@ export default function About() {
                 ))}
               </div>
             </div>
-
           </div>
         </div>
       </div>
