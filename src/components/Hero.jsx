@@ -6,7 +6,7 @@ export default function Hero() {
       id="home"
       className="min-h-screen flex items-center pt-20 bg-linear-to-br from-slate-50 via-cyan-50 to-purple-50"
     >
-      <div className="max-w-6xl mx-auto px-6 py-20">
+      <div className="max-w-6xl mx-auto px-6 py-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6">

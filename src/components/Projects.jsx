@@ -139,10 +139,6 @@ export default function Projects() {
                 title: "Travels Website",
                 image: "/travels-ui.png",
               },
-              {
-                title: "Campus Website",
-                image: "/campus.png",
-              },
             ].map((project, index) => (
               <div
                 key={index}
