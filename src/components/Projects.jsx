@@ -1,105 +1,113 @@
 "use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Projects() {
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
   const [showMobileFilter, setShowMobileFilter] = useState(false);
 
   const categories = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'development', label: 'Development' },
-    { id: 'uiux', label: 'UI/UX Design' },
+    { id: "all", label: "All Projects" },
+    { id: "development", label: "Development" },
+    { id: "uiux", label: "UI/UX Design" },
   ];
 
   const projects = [
     // Development Projects
     {
       id: 1,
-      category: 'development',
-      title: 'BookMyShow Clone',
-      desc: 'Movie ticket booking platform with seat selection and dynamic content management.',
-      fullDescription: 'A comprehensive movie ticket booking platform that replicates the core functionality of BookMyShow. Features include real-time seat selection, multiple cinema locations, show timings, and a responsive design optimized for all devices.',
-      image: '/BookMyShow.png',
-      tech: ['HTML', 'Tailwind CSS'],
-      github: 'https://github.com/yourusername/bookmyshow-clone',
+      category: "development",
+      title: "BookMyShow Clone",
+      desc: "Movie ticket booking platform with seat selection and dynamic content management.",
+      fullDescription:
+        "A comprehensive movie ticket booking platform that replicates the core functionality of BookMyShow. Features include real-time seat selection, multiple cinema locations, show timings, and a responsive design optimized for all devices.",
+      image: "/BookMyShow.png",
+      tech: ["HTML", "Tailwind CSS"],
+      github: "https://github.com/yourusername/bookmyshow-clone",
     },
     {
       id: 2,
-      category: 'development',
-      title: 'Eldar Gilmonav Website',
-      desc: 'Professional website with smooth animations and elegant interface design.',
-      fullDescription: 'A modern, professional portfolio website featuring smooth scroll animations, elegant typography, and an intuitive user interface. Built with performance and accessibility in mind.',
-      image: '/EldarGilmonav.png',
-      tech: ['HTML', 'Tailwind CSS'],
-      github: 'https://github.com/yourusername/eldar-gilmonav',
+      category: "development",
+      title: "Eldar Gilmonav Website",
+      desc: "Professional website with smooth animations and elegant interface design.",
+      fullDescription:
+        "A modern, professional portfolio website featuring smooth scroll animations, elegant typography, and an intuitive user interface. Built with performance and accessibility in mind.",
+      image: "/EldarGilmonav.png",
+      tech: ["HTML", "Tailwind CSS"],
+      github: "https://github.com/yourusername/eldar-gilmonav",
     },
     {
       id: 3,
-      category: 'development',
-      title: 'Travels Website',
-      desc: 'Interactive travel platform with destination showcases and booking features.',
-      fullDescription: 'An engaging travel website showcasing popular destinations with beautiful imagery, travel packages, and booking capabilities. Includes interactive maps and destination galleries.',
-      image: '/TravelsWebsite.png',
-      tech: ['HTML', 'CSS'],
-      github: 'https://github.com/yourusername/travels-website',
+      category: "development",
+      title: "Travels Website",
+      desc: "Interactive travel platform with destination showcases and booking features.",
+      fullDescription:
+        "An engaging travel website showcasing popular destinations with beautiful imagery, travel packages, and booking capabilities. Includes interactive maps and destination galleries.",
+      image: "/TravelsWebsite.png",
+      tech: ["HTML", "CSS"],
+      github: "https://github.com/yourusername/travels-website",
     },
     // UI/UX Projects
     {
       id: 4,
-      category: 'uiux',
-      title: 'Blinkit App Clone',
-      desc: 'UI/UX design focused on clean layouts and smooth user flow.',
-      fullDescription: 'A complete UI/UX redesign of the Blinkit grocery delivery app, focusing on improving user experience, simplifying the checkout process, and creating a more intuitive product discovery flow.',
-      image: '/blinkit.png',
-      tech: ['Figma'],
-      figma: 'https://www.figma.com/file/your-blinkit-design',
+      category: "uiux",
+      title: "Blinkit App Clone",
+      desc: "UI/UX design focused on clean layouts and smooth user flow.",
+      fullDescription:
+        "A complete UI/UX redesign of the Blinkit grocery delivery app, focusing on improving user experience, simplifying the checkout process, and creating a more intuitive product discovery flow.",
+      image: "/blinkit.png",
+      tech: ["Figma"],
+      figma: "https://www.figma.com/file/your-blinkit-design",
     },
     {
       id: 5,
-      category: 'uiux',
-      title: 'Gozoop Website Clone',
-      desc: 'UI/UX design focused on clean layouts and smooth user flow.',
-      fullDescription: 'A modern take on the Gozoop agency website, emphasizing bold typography, creative layouts, and engaging interactions that showcase the agency\'s creative capabilities.',
-      image: '/gozoop.png',
-      tech: ['Figma'],
-      figma: 'https://www.figma.com/file/your-gozoop-design',
+      category: "uiux",
+      title: "Gozoop Website Clone",
+      desc: "UI/UX design focused on clean layouts and smooth user flow.",
+      fullDescription:
+        "A modern take on the Gozoop agency website, emphasizing bold typography, creative layouts, and engaging interactions that showcase the agency's creative capabilities.",
+      image: "/gozoop.png",
+      tech: ["Figma"],
+      figma: "https://www.figma.com/file/your-gozoop-design",
     },
     {
       id: 6,
-      category: 'uiux',
-      title: 'Snapdeal Clone',
-      desc: 'UI/UX design focused on clean layouts and smooth user flow.',
-      fullDescription: 'E-commerce platform redesign with improved product discovery, streamlined checkout process, and enhanced mobile shopping experience.',
-      image: '/snapdeal.png',
-      tech: ['Figma'],
-      figma: 'https://www.figma.com/file/your-snapdeal-design',
+      category: "uiux",
+      title: "Snapdeal Clone",
+      desc: "UI/UX design focused on clean layouts and smooth user flow.",
+      fullDescription:
+        "E-commerce platform redesign with improved product discovery, streamlined checkout process, and enhanced mobile shopping experience.",
+      image: "/snapdeal.png",
+      tech: ["Figma"],
+      figma: "https://www.figma.com/file/your-snapdeal-design",
     },
     {
       id: 7,
-      category: 'uiux',
-      title: 'Smartwatch UI',
-      desc: 'UI/UX design focused on clean layouts and smooth user flow.',
-      fullDescription: 'Intuitive smartwatch interface design optimized for small screens, featuring health tracking, notifications, and quick actions with minimal user input.',
-      image: '/smartwatch.png',
-      tech: ['Figma'],
-      figma: 'https://www.figma.com/file/your-smartwatch-design',
+      category: "uiux",
+      title: "Smartwatch UI",
+      desc: "UI/UX design focused on clean layouts and smooth user flow.",
+      fullDescription:
+        "Intuitive smartwatch interface design optimized for small screens, featuring health tracking, notifications, and quick actions with minimal user input.",
+      image: "/smartwatch.png",
+      tech: ["Figma"],
+      figma: "https://www.figma.com/file/your-smartwatch-design",
     },
     {
       id: 8,
-      category: 'uiux',
-      title: 'Travels Website',
-      desc: 'UI/UX design focused on clean layouts and smooth user flow.',
-      fullDescription: 'Travel booking platform design featuring immersive destination imagery, simplified booking flows, and personalized travel recommendations.',
-      image: '/travels-ui.png',
-      tech: ['Figma'],
-      figma: 'https://www.figma.com/file/your-travels-design',
+      category: "uiux",
+      title: "Travels Website",
+      desc: "UI/UX design focused on clean layouts and smooth user flow.",
+      fullDescription:
+        "Travel booking platform design featuring immersive destination imagery, simplified booking flows, and personalized travel recommendations.",
+      image: "/travels-ui.png",
+      tech: ["Figma"],
+      figma: "https://www.figma.com/file/your-travels-design",
     },
   ];
 
   const filteredProjects = projects.filter(
-    (p) => selectedCategory === 'all' || p.category === selectedCategory
+    (p) => selectedCategory === "all" || p.category === selectedCategory,
   );
 
   return (
@@ -128,8 +136,8 @@ export default function Projects() {
                   onClick={() => setSelectedCategory(cat.id)}
                   className={`px-6 py-3 rounded-md font-semibold transition-all duration-300 ${
                     selectedCategory === cat.id
-                      ? 'bg-linear-to-r from-cyan-500 to-blue-600 text-white shadow-lg'
-                      : 'text-gray-600 hover:text-gray-900'
+                      ? "bg-linear-to-r from-cyan-500 to-blue-600 text-white shadow-lg"
+                      : "text-gray-600 hover:text-gray-900"
                   }`}
                 >
                   {cat.label}
@@ -176,8 +184,8 @@ export default function Projects() {
                   }}
                   className={`w-full text-left px-4 py-3 rounded-lg font-semibold transition-all duration-300 ${
                     selectedCategory === cat.id
-                      ? 'bg-linear-to-r from-cyan-500 to-blue-600 text-white shadow-md'
-                      : 'text-gray-700 hover:bg-gray-100'
+                      ? "bg-linear-to-r from-cyan-500 to-blue-600 text-white shadow-md"
+                      : "text-gray-700 hover:bg-gray-100"
                   }`}
                 >
                   {cat.label}
@@ -187,7 +195,8 @@ export default function Projects() {
           )}
 
           {/* Development Projects Section */}
-          {(selectedCategory === 'all' || selectedCategory === 'development') && (
+          {(selectedCategory === "all" ||
+            selectedCategory === "development") && (
             <div className="mb-16">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-12 h-12 bg-linear-to-r from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center">
@@ -212,7 +221,7 @@ export default function Projects() {
 
               <div className="grid md:grid-cols-3 gap-8">
                 {projects
-                  .filter((p) => p.category === 'development')
+                  .filter((p) => p.category === "development")
                   .map((project) => (
                     <div
                       key={project.id}
@@ -252,7 +261,7 @@ export default function Projects() {
           )}
 
           {/* UI/UX Projects Section */}
-          {(selectedCategory === 'all' || selectedCategory === 'uiux') && (
+          {(selectedCategory === "all" || selectedCategory === "uiux") && (
             <div>
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-12 h-12 bg-linear-to-r from-purple-500 to-pink-600 rounded-xl flex items-center justify-center">
@@ -277,7 +286,7 @@ export default function Projects() {
 
               <div className="grid md:grid-cols-3 gap-8">
                 {projects
-                  .filter((p) => p.category === 'uiux')
+                  .filter((p) => p.category === "uiux")
                   .map((project) => (
                     <div
                       key={project.id}
@@ -334,7 +343,10 @@ export default function Projects() {
               <div
                 className="relative bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
                 onClick={(e) => e.stopPropagation()}
-                style={{ scrollbarWidth: 'thin', scrollbarColor: '#cbd5e1 #f1f5f9' }}
+                style={{
+                  scrollbarWidth: "thin",
+                  scrollbarColor: "#cbd5e1 #f1f5f9",
+                }}
               >
                 {/* Close Button */}
                 <div className="sticky top-0 w-full flex justify-end p-4 z-20 bg-linear-to-b from-white via-white to-transparent pointer-events-none">
@@ -373,14 +385,14 @@ export default function Projects() {
                   <div className="flex items-center gap-3 mb-6">
                     <span
                       className={`px-5 py-2 rounded-full text-sm font-bold ${
-                        selectedProject.category === 'development'
-                          ? 'bg-cyan-100 text-cyan-700'
-                          : 'bg-purple-100 text-purple-700'
+                        selectedProject.category === "development"
+                          ? "bg-cyan-100 text-cyan-700"
+                          : "bg-purple-100 text-purple-700"
                       }`}
                     >
-                      {selectedProject.category === 'development'
-                        ? 'Development'
-                        : 'UI/UX Design'}
+                      {selectedProject.category === "development"
+                        ? "Development"
+                        : "UI/UX Design"}
                     </span>
                   </div>
 

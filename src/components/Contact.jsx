@@ -1,9 +1,11 @@
 "use client";
 
-
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-linear-to-b from-white to-slate-50">
+    <section
+      id="contact"
+      className="py-20 bg-linear-to-b from-white to-slate-50"
+    >
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-cyan-500 font-semibold text-sm tracking-wide uppercase">
@@ -21,7 +23,9 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Email Card */}
           <div
-            onClick={() => window.location.href = 'mailto:sahillansarii001@gmail.com'}
+            onClick={() =>
+              (window.location.href = "mailto:sahillansarii001@gmail.com")
+            }
             className="group relative overflow-hidden bg-white rounded-2xl p-8 border border-gray-200 hover:border-cyan-400 transition-all duration-300 hover:shadow-xl cursor-pointer"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-cyan-100 to-cyan-50 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
@@ -42,7 +46,9 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Email Me</h3>
-              <p className="text-gray-600 text-sm mb-3">Drop me a line anytime</p>
+              <p className="text-gray-600 text-sm mb-3">
+                Drop me a line anytime
+              </p>
               <p className="text-cyan-600 font-semibold group-hover:text-cyan-700">
                 sahillansarii001@gmail.com
               </p>
@@ -51,7 +57,7 @@ export default function Contact() {
 
           {/* Phone Card */}
           <div
-            onClick={() => window.location.href = 'tel:+919967747153'}
+            onClick={() => (window.location.href = "tel:+919967747153")}
             className="group relative overflow-hidden bg-white rounded-2xl p-8 border border-gray-200 hover:border-purple-400 transition-all duration-300 hover:shadow-xl cursor-pointer"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-purple-100 to-purple-50 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
