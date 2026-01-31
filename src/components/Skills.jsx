@@ -172,11 +172,11 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="py-24 bg-gradient-to-b from-white via-slate-50 to-white">
+    <section id="skills" className="py-24 bg-linear-to-b from-white via-slate-50 to-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <span className="inline-block px-4 py-1.5 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold text-sm tracking-wide uppercase rounded-full mb-4">
+          <span className="inline-block px-4 py-1.5 bg-linear-to-r from-cyan-500 to-purple-600 text-white font-semibold text-sm tracking-wide uppercase rounded-full mb-4">
             Skills & Expertise
           </span>
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mt-4 mb-6">
@@ -195,7 +195,7 @@ export default function Skills() {
             return (
               <div
                 key={index}
-                className={`group relative bg-gradient-to-br ${colorClasses.bg} rounded-3xl p-8 transition-all duration-500 border-2 border-transparent ${colorClasses.border} ${colorClasses.glow} hover:shadow-2xl hover:-translate-y-2`}
+                className={`group relative bg-linear-to-br ${colorClasses.bg} rounded-3xl p-8 transition-all duration-500 border-2 border-transparent ${colorClasses.border} ${colorClasses.glow} hover:shadow-2xl hover:-translate-y-2`}
               >
                 {/* Decorative corner accent */}
                 <div className="absolute top-0 right-0 w-20 h-20 bg-white/30 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -214,7 +214,7 @@ export default function Skills() {
                 </div>
 
                 {/* Description */}
-                <p className="text-center text-sm text-gray-600 mb-4 min-h-[40px]">
+                <p className="text-center text-sm text-gray-600 mb-4 min-h-10">
                   {skill.description}
                 </p>
 
@@ -244,7 +244,7 @@ export default function Skills() {
                     </svg>
                     {skill.yearsOfExperience}
                   </span>
-                  <span className={`inline-block px-3 py-1.5 bg-gradient-to-r ${colorClasses.progress} text-white rounded-lg text-xs font-bold shadow-md`}>
+                  <span className={`inline-block px-3 py-1.5 bg-linear-to-r ${colorClasses.progress} text-white rounded-lg text-xs font-bold shadow-md`}>
                     {skill.rating >= 90
                       ? "Expert"
                       : skill.rating >= 75
@@ -262,7 +262,7 @@ export default function Skills() {
         {/* Bottom Stats Section */}
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
-            <div className="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-cyan-500 to-purple-600 rounded-xl flex items-center justify-center">
+            <div className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-cyan-500 to-purple-600 rounded-xl flex items-center justify-center">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
               </svg>
@@ -272,7 +272,7 @@ export default function Skills() {
           </div>
 
           <div className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
-            <div className="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center">
+            <div className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
@@ -282,7 +282,7 @@ export default function Skills() {
           </div>
 
           <div className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
-            <div className="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center">
+            <div className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
               </svg>
