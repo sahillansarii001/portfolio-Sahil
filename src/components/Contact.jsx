@@ -3,7 +3,7 @@
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-white to-slate-50">
+    <section id="contact" className="py-20 bg-linear-to-b from-white to-slate-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-cyan-500 font-semibold text-sm tracking-wide uppercase">
@@ -24,9 +24,9 @@ export default function Contact() {
             onClick={() => window.location.href = 'mailto:sahillansarii001@gmail.com'}
             className="group relative overflow-hidden bg-white rounded-2xl p-8 border border-gray-200 hover:border-cyan-400 transition-all duration-300 hover:shadow-xl cursor-pointer"
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-100 to-cyan-50 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
+            <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-cyan-100 to-cyan-50 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
             <div className="relative">
-              <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <div className="w-14 h-14 bg-linear-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <svg
                   className="w-7 h-7 text-white"
                   fill="none"
@@ -54,9 +54,9 @@ export default function Contact() {
             onClick={() => window.location.href = 'tel:+919967747153'}
             className="group relative overflow-hidden bg-white rounded-2xl p-8 border border-gray-200 hover:border-purple-400 transition-all duration-300 hover:shadow-xl cursor-pointer"
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-100 to-purple-50 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
+            <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-purple-100 to-purple-50 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500" />
             <div className="relative">
-              <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <div className="w-14 h-14 bg-linear-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <svg
                   className="w-7 h-7 text-white"
                   fill="none"
@@ -91,9 +91,9 @@ export default function Contact() {
               href="https://github.com/sahillansarii001"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-4 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 hover:from-gray-900 hover:to-gray-800 transition-all duration-300 hover:shadow-lg"
+              className="group flex items-center gap-4 bg-linear-to-br from-gray-50 to-gray-100 rounded-xl p-6 hover:from-gray-900 hover:to-gray-800 transition-all duration-300 hover:shadow-lg"
             >
-              <div className="w-12 h-12 bg-white group-hover:bg-gray-700 rounded-lg flex items-center justify-center transition-colors flex-shrink-0">
+              <div className="w-12 h-12 bg-white group-hover:bg-gray-700 rounded-lg flex items-center justify-center transition-colors shrink-0">
                 <svg
                   className="w-7 h-7 text-gray-700 group-hover:text-white transition-colors"
                   fill="currentColor"
@@ -130,9 +130,9 @@ export default function Contact() {
               href="https://www.linkedin.com/in/sahil-ansari-50570b378"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-4 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 hover:shadow-lg"
+              className="group flex items-center gap-4 bg-linear-to-br from-blue-50 to-blue-100 rounded-xl p-6 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 hover:shadow-lg"
             >
-              <div className="w-12 h-12 bg-white group-hover:bg-blue-500 rounded-lg flex items-center justify-center transition-colors flex-shrink-0">
+              <div className="w-12 h-12 bg-white group-hover:bg-blue-500 rounded-lg flex items-center justify-center transition-colors shrink-0">
                 <svg
                   className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors"
                   fill="currentColor"
@@ -169,9 +169,9 @@ export default function Contact() {
               href="https://www.instagram.com/saahillansari"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-4 bg-gradient-to-br from-pink-50 to-rose-100 rounded-xl p-6 hover:from-pink-500 hover:to-rose-600 transition-all duration-300 hover:shadow-lg"
+              className="group flex items-center gap-4 bg-linear-to-br from-pink-50 to-rose-100 rounded-xl p-6 hover:from-pink-500 hover:to-rose-600 transition-all duration-300 hover:shadow-lg"
             >
-              <div className="w-12 h-12 bg-white group-hover:bg-pink-400 rounded-lg flex items-center justify-center transition-colors flex-shrink-0">
+              <div className="w-12 h-12 bg-white group-hover:bg-pink-400 rounded-lg flex items-center justify-center transition-colors shrink-0">
                 <svg
                   className="w-7 h-7 text-pink-600 group-hover:text-white transition-colors"
                   fill="currentColor"
