@@ -1,4 +1,12 @@
+"use client";
+
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+
 export default function Skills() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
+
   const skills = [
     {
       name: "HTML5",
@@ -86,7 +94,7 @@ export default function Skills() {
           <path
             fill="#5c6bc0"
             fillRule="evenodd"
-            d="m 0.304,31.404282 c -0.266,-0.356 -0.304,-0.694 -0.304,-1.149 0,-3.744 0,-15.014 0,-18.759 0,-0.758 0.417,-1.458 1.094-1.8360003 3.343,-1.872 13.405-7.507 16.748-9.38000004 0.677,-0.379 1.594,-0.371 2.271,0.008 3.343,1.87200004 13.371,7.45900004 16.714,9.33100004 0.27,0.152 0.476,0.335 0.66,0.5760003 z"
+            d="m 0.304,31.404282 c -0.266,-0.356 -0.304,-0.694 -0.304,-1.149 0,-3.744 0,-15.014 0,-18.759 0,-0.758 0.417,-1.458 1.094,-1.8360003 3.343,-1.872 13.405,-7.507 16.748,-9.38000004 0.677,-0.379 1.594,-0.371 2.271,0.008 3.343,1.87200004 13.371,7.45900004 16.714,9.33100004 0.27,0.152 0.476,0.335 0.66,0.5760003 z"
             clipRule="evenodd"
           />
           <path
@@ -293,44 +301,114 @@ export default function Skills() {
     return colors[color];
   };
 
+  const headingVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+  };
+
+  const statsVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+  };
+
   return (
     <section
       id="skills"
       className="py-24 bg-linear-to-b from-white via-slate-50 to-white"
+      ref={ref}
     >
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20">
-          <span className="inline-block px-4 py-1.5 bg-linear-to-r from-cyan-500 to-purple-600 text-white font-semibold text-sm tracking-wide uppercase rounded-full mb-4">
+        <motion.div
+          className="text-center mb-20"
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={headingVariants}
+        >
+          <motion.span
+            className="inline-block px-4 py-1.5 bg-linear-to-r from-cyan-500 to-purple-600 text-white font-semibold text-sm tracking-wide uppercase rounded-full mb-4"
+            initial={{ scale: 0 }}
+            animate={isInView ? { scale: 1 } : { scale: 0 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
             Skills & Expertise
-          </span>
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mt-4 mb-6">
+          </motion.span>
+          <motion.h2
+            className="text-5xl md:text-6xl font-bold text-gray-900 mt-4 mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+          >
             My Toolkit
-          </h2>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+          </motion.h2>
+          <motion.p
+            className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed"
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+          >
             A comprehensive collection of technologies and tools I've mastered
             to bring ideas to life. Each skill represents dedication, practice,
             and real-world application.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16"
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+        >
           {skills.map((skill, index) => {
             const colorClasses = getColorClasses(skill.color);
             return (
-              <div
+              <motion.div
                 key={index}
                 className={`group relative bg-linear-to-br ${colorClasses.bg} rounded-3xl p-8 transition-all duration-500 border-2 border-transparent ${colorClasses.border} ${colorClasses.glow} hover:shadow-2xl hover:-translate-y-2`}
+                variants={cardVariants}
+                whileHover={{ y: -8, scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 {/* Decorative corner accent */}
                 <div className="absolute top-0 right-0 w-20 h-20 bg-white/30 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 {/* Icon Section */}
                 <div className="text-center mb-6 relative z-10">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-white rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 group-hover:rotate-3">
+                  <motion.div
+                    className="w-20 h-20 mx-auto mb-4 bg-white rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 group-hover:rotate-3"
+                    whileHover={{ rotate: 12, scale: 1.15 }}
+                    transition={{ duration: 0.3 }}
+                  >
                     {skill.icon}
-                  </div>
+                  </motion.div>
                   <h3 className="font-bold text-gray-900 text-xl mb-1">
                     {skill.name}
                   </h3>
@@ -355,15 +433,22 @@ export default function Skills() {
                     </span>
                   </div>
                   <div className="w-full bg-gray-200/70 rounded-full h-3 overflow-hidden shadow-inner">
-                    <div
+                    <motion.div
                       className={`h-full ${colorClasses.progress} rounded-full transition-all duration-1000 ease-out shadow-md`}
-                      style={{ width: `${skill.rating}%` }}
+                      initial={{ width: 0 }}
+                      animate={isInView ? { width: `${skill.rating}%` } : { width: 0 }}
+                      transition={{ delay: 0.5 + index * 0.1, duration: 1 }}
                     />
                   </div>
                 </div>
 
                 {/* Experience & Level Badge */}
-                <div className="mt-5 flex items-center justify-between gap-2">
+                <motion.div
+                  className="mt-5 flex items-center justify-between gap-2"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+                  transition={{ delay: 0.6 + index * 0.1 }}
+                >
                   <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-white/70 backdrop-blur-sm rounded-lg text-xs font-bold text-gray-700 shadow-sm">
                     <svg
                       className="w-3 h-3"
@@ -391,16 +476,30 @@ export default function Skills() {
                           ? "Intermediate"
                           : "Learning"}
                   </span>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
 
         {/* Bottom Stats Section */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
-            <div className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-cyan-500 to-purple-600 rounded-xl flex items-center justify-center">
+        <motion.div
+          className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8"
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+        >
+          <motion.div
+            className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100"
+            variants={statsVariants}
+            whileHover={{ scale: 1.05, y: -5 }}
+            transition={{ duration: 0.3 }}
+          >
+            <motion.div
+              className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-cyan-500 to-purple-600 rounded-xl flex items-center justify-center"
+              whileHover={{ rotate: 360 }}
+              transition={{ duration: 0.6 }}
+            >
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
@@ -414,13 +513,29 @@ export default function Skills() {
                   d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
                 />
               </svg>
-            </div>
-            <h4 className="text-3xl font-bold text-gray-900 mb-2">8+</h4>
+            </motion.div>
+            <motion.h4
+              className="text-3xl font-bold text-gray-900 mb-2"
+              initial={{ scale: 0 }}
+              animate={isInView ? { scale: 1 } : { scale: 0 }}
+              transition={{ delay: 0.8, type: "spring", stiffness: 200 }}
+            >
+              8+
+            </motion.h4>
             <p className="text-gray-600 font-semibold">Total Skills</p>
-          </div>
+          </motion.div>
 
-          <div className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
-            <div className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center">
+          <motion.div
+            className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100"
+            variants={statsVariants}
+            whileHover={{ scale: 1.05, y: -5 }}
+            transition={{ duration: 0.3 }}
+          >
+            <motion.div
+              className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center"
+              whileHover={{ rotate: 360 }}
+              transition={{ duration: 0.6 }}
+            >
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
@@ -434,13 +549,29 @@ export default function Skills() {
                   d="M13 10V3L4 14h7v7l9-11h-7z"
                 />
               </svg>
-            </div>
-            <h4 className="text-3xl font-bold text-gray-900 mb-2">6+</h4>
+            </motion.div>
+            <motion.h4
+              className="text-3xl font-bold text-gray-900 mb-2"
+              initial={{ scale: 0 }}
+              animate={isInView ? { scale: 1 } : { scale: 0 }}
+              transition={{ delay: 0.9, type: "spring", stiffness: 200 }}
+            >
+              6+
+            </motion.h4>
             <p className="text-gray-600 font-semibold">Months Experience</p>
-          </div>
+          </motion.div>
 
-          <div className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
-            <div className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center">
+          <motion.div
+            className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100"
+            variants={statsVariants}
+            whileHover={{ scale: 1.05, y: -5 }}
+            transition={{ duration: 0.3 }}
+          >
+            <motion.div
+              className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center"
+              whileHover={{ rotate: 360 }}
+              transition={{ duration: 0.6 }}
+            >
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
@@ -454,11 +585,18 @@ export default function Skills() {
                   d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                 />
               </svg>
-            </div>
-            <h4 className="text-3xl font-bold text-gray-900 mb-2">Always</h4>
+            </motion.div>
+            <motion.h4
+              className="text-3xl font-bold text-gray-900 mb-2"
+              initial={{ scale: 0 }}
+              animate={isInView ? { scale: 1 } : { scale: 0 }}
+              transition={{ delay: 1.0, type: "spring", stiffness: 200 }}
+            >
+              Always
+            </motion.h4>
             <p className="text-gray-600 font-semibold">Learning More</p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
