@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/NavBar";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import WhatsApp from "@/components/Whatsapp";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Certifications />
       <Contact />
       <Footer />
+      <WhatsApp />
     </>
   );
 }
