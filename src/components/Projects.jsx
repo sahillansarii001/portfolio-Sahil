@@ -29,7 +29,7 @@ export default function Projects() {
     {
       id: 2,
       category: "development",
-      title: "Eldar Gilmonav Website",
+      title: "Eldar Gilmonav Clone",
       desc: "Professional website with smooth animations and elegant interface design.",
       fullDescription:
         "A modern, professional portfolio website featuring smooth scroll animations, elegant typography, and an intuitive user interface. Built with performance and accessibility in mind.",
@@ -40,7 +40,7 @@ export default function Projects() {
     {
       id: 3,
       category: "development",
-      title: "Travels Website",
+      title: "Travels Website Clone",
       desc: "Interactive travel platform with destination showcases and booking features.",
       fullDescription:
         "An engaging travel website showcasing popular destinations with beautiful imagery, travel packages, and booking capabilities. Includes interactive maps and destination galleries.",
