@@ -7,7 +7,7 @@ export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
   const [showMobileFilter, setShowMobileFilter] = useState(false);
-  
+
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
@@ -273,7 +273,9 @@ export default function Projects() {
                 <motion.div
                   className="flex items-center gap-3 mb-8"
                   initial={{ opacity: 0, x: -20 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                  animate={
+                    isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }
+                  }
                   transition={{ delay: 0.3, duration: 0.5 }}
                 >
                   <div className="w-12 h-12 bg-linear-to-r from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center">
@@ -360,7 +362,9 @@ export default function Projects() {
                 <motion.div
                   className="flex items-center gap-3 mb-8"
                   initial={{ opacity: 0, x: -20 }}
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+                  animate={
+                    isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }
+                  }
                   transition={{ delay: 0.3, duration: 0.5 }}
                 >
                   <div className="w-12 h-12 bg-linear-to-r from-purple-500 to-pink-600 rounded-xl flex items-center justify-center">

@@ -212,7 +212,11 @@ export default function About() {
                 <motion.div
                   className="text-3xl font-bold text-cyan-500 mb-2"
                   initial={{ opacity: 0, scale: 0.5 }}
-                  animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
+                  animate={
+                    isInView
+                      ? { opacity: 1, scale: 1 }
+                      : { opacity: 0, scale: 0.5 }
+                  }
                   transition={{ delay: 0.4, duration: 0.5, ease: "easeOut" }}
                 >
                   9+
@@ -231,7 +235,11 @@ export default function About() {
                 <motion.div
                   className="text-3xl font-bold text-purple-500 mb-2"
                   initial={{ opacity: 0, scale: 0.5 }}
-                  animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
+                  animate={
+                    isInView
+                      ? { opacity: 1, scale: 1 }
+                      : { opacity: 0, scale: 0.5 }
+                  }
                   transition={{ delay: 0.5, duration: 0.5, ease: "easeOut" }}
                 >
                   8+

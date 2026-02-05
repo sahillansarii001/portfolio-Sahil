@@ -14,7 +14,7 @@ export default function WhatsApp() {
 
   return (
     <a
-      href="https://wa.me/9967747153?text=Hi%20Sahil,%20I%20visited%20your%20portfolio!"
+      href="https://wa.me/9967747153?text=Hello%20Sahil,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"

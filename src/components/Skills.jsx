@@ -436,7 +436,9 @@ export default function Skills() {
                     <motion.div
                       className={`h-full ${colorClasses.progress} rounded-full transition-all duration-1000 ease-out shadow-md`}
                       initial={{ width: 0 }}
-                      animate={isInView ? { width: `${skill.rating}%` } : { width: 0 }}
+                      animate={
+                        isInView ? { width: `${skill.rating}%` } : { width: 0 }
+                      }
                       transition={{ delay: 0.5 + index * 0.1, duration: 1 }}
                     />
                   </div>
@@ -446,7 +448,9 @@ export default function Skills() {
                 <motion.div
                   className="mt-5 flex items-center justify-between gap-2"
                   initial={{ opacity: 0, y: 10 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+                  animate={
+                    isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+                  }
                   transition={{ delay: 0.6 + index * 0.1 }}
                 >
                   <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-white/70 backdrop-blur-sm rounded-lg text-xs font-bold text-gray-700 shadow-sm">
