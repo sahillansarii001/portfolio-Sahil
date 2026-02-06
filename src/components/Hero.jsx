@@ -51,9 +51,71 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center pt-20 bg-linear-to-br from-slate-50 via-cyan-50 to-purple-50"
+      className="min-h-screen flex items-center pt-20 bg-linear-to-br from-slate-50 via-cyan-50 to-purple-50 relative overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto px-6 py-6">
+      {/* Animated Background Elements */}
+      <motion.div
+        className="absolute top-20 left-10 w-72 h-72 bg-cyan-400/20 rounded-full blur-3xl"
+        animate={{
+          x: [0, 50, 0],
+          y: [0, 30, 0],
+          scale: [1, 1.1, 1],
+        }}
+        transition={{
+          duration: 8,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+      <motion.div
+        className="absolute bottom-20 right-10 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl"
+        animate={{
+          x: [0, -30, 0],
+          y: [0, -50, 0],
+          scale: [1, 1.2, 1],
+        }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+      <motion.div
+        className="absolute top-1/2 left-1/2 w-80 h-80 bg-pink-400/10 rounded-full blur-3xl"
+        animate={{
+          x: [-40, 40, -40],
+          y: [-40, 40, -40],
+        }}
+        transition={{
+          duration: 12,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+
+      {/* Floating Particles */}
+      {[...Array(5)].map((_, i) => (
+        <motion.div
+          key={i}
+          className="absolute w-2 h-2 bg-cyan-500/30 rounded-full"
+          style={{
+            top: `${20 + i * 15}%`,
+            left: `${10 + i * 20}%`,
+          }}
+          animate={{
+            y: [0, -30, 0],
+            opacity: [0.3, 0.8, 0.3],
+          }}
+          transition={{
+            duration: 3 + i * 0.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: i * 0.2,
+          }}
+        />
+      ))}
+
+      <div className="max-w-6xl mx-auto px-6 py-6 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <motion.div
@@ -62,33 +124,76 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
           >
+            {/* Badge with Animation */}
             <motion.div className="inline-block" variants={itemVariants}>
-              <span className="px-4 py-2 bg-cyan-100 text-cyan-700 rounded-full text-sm font-semibold">
-                👋 Welcome to my portfolio
-              </span>
+              <motion.span
+                className="px-4 py-2 bg-white/90 backdrop-blur-md border border-cyan-200/50 text-cyan-700 rounded-full text-sm font-semibold shadow-lg inline-flex items-center gap-2"
+                whileHover={{ scale: 1.05 }}
+              >
+                <motion.span
+                  animate={{
+                    rotate: [0, 14, -8, 14, -4, 10, 0],
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    repeatDelay: 1,
+                  }}
+                >
+                  👋
+                </motion.span>
+                Welcome to my portfolio
+              </motion.span>
             </motion.div>
 
+            {/* Heading with Gradient and Effects */}
             <motion.h1
-              className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-black"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
               variants={itemVariants}
             >
-              I&apos;m{" "}
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-500 to-purple-600">
-                Sahil
+              <span className="text-black">I&apos;m </span>
+              <span className="relative inline-block">
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-500 to-purple-600 relative">
+                  Sahil
+                  <motion.span
+                    className="absolute -inset-1 bg-linear-to-r from-cyan-500/20 to-purple-600/20 blur-lg -z-10"
+                    animate={{
+                      opacity: [0.5, 0.8, 0.5],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                    }}
+                  />
+                </span>
               </span>
               <br />
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-600 to-pink-600">
-                Ansari
+              <span className="relative inline-block">
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-600 to-pink-600 relative">
+                  Ansari
+                  <motion.span
+                    className="absolute -inset-1 bg-linear-to-r from-purple-600/20 to-pink-600/20 blur-lg -z-10"
+                    animate={{
+                      opacity: [0.5, 0.8, 0.5],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      delay: 0.5,
+                    }}
+                  />
+                </span>
               </span>
             </motion.h1>
 
-            <motion.p
-              className="text-xl md:text-2xl text-gray-600 font-light"
-              variants={itemVariants}
-            >
-              Web Developer & UI/UX Designer
-            </motion.p>
+            {/* Subtitle with Decorative Line */}
+            <motion.div variants={itemVariants} className="flex items-center gap-3">
+              <p className="text-xl md:text-2xl text-gray-600 font-light">
+                Web Developer & UI/UX Designer
+              </p>
+            </motion.div>
 
+            {/* Description */}
             <motion.p
               className="text-gray-600 text-lg leading-relaxed"
               variants={itemVariants}
@@ -98,32 +203,62 @@ export default function Hero() {
               Technology.
             </motion.p>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons with Enhanced Effects */}
             <motion.div
               className="flex flex-col sm:flex-row gap-4 pt-4"
               variants={itemVariants}
             >
               <motion.a
                 href="#projects"
-                className="px-8 py-4 bg-linear-to-r from-cyan-500 to-purple-600 text-white rounded-full font-semibold hover:shadow-2xl transform hover:-translate-y-1 transition-all text-center"
+                className="group relative px-8 py-4 bg-linear-to-r from-cyan-500 to-purple-600 text-white rounded-full font-semibold overflow-hidden shadow-lg text-center"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                View My Work
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  View My Work
+                  <motion.svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    animate={{ x: [0, 5, 0] }}
+                    transition={{ duration: 1.5, repeat: Infinity }}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
+                  </motion.svg>
+                </span>
+                <motion.div
+                  className="absolute inset-0 bg-linear-to-r from-purple-600 to-pink-600"
+                  initial={{ x: "100%" }}
+                  whileHover={{ x: 0 }}
+                  transition={{ duration: 0.3 }}
+                />
               </motion.a>
+
               <motion.a
                 href="https://github.com/sahillansarii001"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-white border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-cyan-500 hover:text-cyan-500 transition-all text-center"
+                className="group px-8 py-4 bg-white/80 backdrop-blur-sm border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-cyan-500 hover:text-cyan-500 transition-all shadow-lg text-center relative overflow-hidden"
                 whileHover={{ scale: 1.05, borderColor: "#06b6d4" }}
                 whileTap={{ scale: 0.95 }}
               >
-                GitHub Profile
+                <span className="relative z-10">GitHub Profile</span>
+                <motion.div
+                  className="absolute inset-0 bg-cyan-50"
+                  initial={{ opacity: 0 }}
+                  whileHover={{ opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                />
               </motion.a>
             </motion.div>
 
-            {/* Social Links */}
+            {/* Social Links with Enhanced Hover Effects */}
             <motion.div
               className="flex items-center gap-4 pt-6"
               variants={itemVariants}
@@ -131,12 +266,18 @@ export default function Hero() {
               <motion.a
                 href="https://github.com/sahillansarii001"
                 target="_blank"
-                className="w-12 h-12 bg-white border border-black rounded-full flex items-center justify-center hover:border-cyan-500 hover:text-cyan-500 transition-all"
+                className="w-12 h-12 bg-white/90 backdrop-blur-sm border border-gray-300 rounded-full flex items-center justify-center hover:border-cyan-500 hover:text-cyan-500 transition-all shadow-lg relative group"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
               >
+                <motion.div
+                  className="absolute inset-0 bg-cyan-500/10 rounded-full"
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileHover={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                />
                 <svg
-                  className="w-5 h-5"
+                  className="w-5 h-5 relative z-10"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -147,12 +288,18 @@ export default function Hero() {
               <motion.a
                 href="https://www.linkedin.com/in/sahil-ansari-50570b378"
                 target="_blank"
-                className="w-12 h-12 bg-white border border-black rounded-full flex items-center justify-center hover:border-blue-600 hover:text-blue-600 transition-all"
+                className="w-12 h-12 bg-white/90 backdrop-blur-sm border border-gray-300 rounded-full flex items-center justify-center hover:border-blue-600 hover:text-blue-600 transition-all shadow-lg relative group"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
               >
+                <motion.div
+                  className="absolute inset-0 bg-blue-500/10 rounded-full"
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileHover={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                />
                 <svg
-                  className="w-5 h-5"
+                  className="w-5 h-5 relative z-10"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -163,12 +310,18 @@ export default function Hero() {
               <motion.a
                 href="https://www.instagram.com/saahillansari"
                 target="_blank"
-                className="w-12 h-12 bg-white border border-black rounded-full flex items-center justify-center hover:border-pink-500 hover:text-pink-500 transition-all"
+                className="w-12 h-12 bg-white/90 backdrop-blur-sm border border-gray-300 rounded-full flex items-center justify-center hover:border-pink-500 hover:text-pink-500 transition-all shadow-lg relative group"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
               >
+                <motion.div
+                  className="absolute inset-0 bg-pink-500/10 rounded-full"
+                  initial={{ scale: 0, opacity: 0 }}
+                  whileHover={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                />
                 <svg
-                  className="w-5 h-5"
+                  className="w-5 h-5 relative z-10"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -178,7 +331,7 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right Image */}
+          {/* Right Image - Enhanced Version */}
           <motion.div
             className="relative"
             initial="hidden"
@@ -186,6 +339,7 @@ export default function Hero() {
             variants={imageVariants}
           >
             <div className="relative z-10">
+              {/* Rotating Gradient Cards */}
               <motion.div
                 className="w-full h-96 bg-linear-to-br from-cyan-400 via-purple-500 to-pink-500 rounded-3xl shadow-2xl transform rotate-3"
                 animate={{
@@ -196,7 +350,20 @@ export default function Hero() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-              ></motion.div>
+              >
+                {/* Inner Glow Effect */}
+                <motion.div
+                  className="absolute inset-0 bg-white/10 rounded-3xl"
+                  animate={{
+                    opacity: [0.1, 0.3, 0.1],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                  }}
+                />
+              </motion.div>
+
               <motion.div
                 className="absolute inset-0 w-full h-96 bg-linear-to-br from-purple-400 via-pink-500 to-red-500 rounded-3xl shadow-2xl transform -rotate-3"
                 animate={{
@@ -208,26 +375,103 @@ export default function Hero() {
                   ease: "easeInOut",
                   delay: 0.5,
                 }}
-              ></motion.div>
+              >
+                {/* Inner Glow Effect */}
+                <motion.div
+                  className="absolute inset-0 bg-white/10 rounded-3xl"
+                  animate={{
+                    opacity: [0.1, 0.3, 0.1],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    delay: 0.5,
+                  }}
+                />
+              </motion.div>
 
+              {/* Profile Image Container */}
               <motion.div
                 className="absolute inset-0 flex items-center justify-center"
                 animate={floatingAnimation}
               >
                 <motion.div
-                  className="w-64 h-64 bg-white rounded-full shadow-xl flex items-center justify-center"
+                  className="relative w-64 h-64 bg-white rounded-full shadow-xl flex items-center justify-center"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Image
-                    src="/Sahil.webp"
-                    alt="Sahil Ansari"
-                    width={240}
-                    height={240}
-                    className="rounded-full"
+                  {/* Animated Border Ring */}
+                  <motion.div
+                    className="absolute -inset-2 bg-linear-to-r from-cyan-500 via-purple-600 to-pink-600 rounded-full opacity-75 blur-md"
+                    animate={{
+                      rotate: 360,
+                    }}
+                    transition={{
+                      duration: 8,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
                   />
+
+                  {/* Image Container */}
+                  <div className="relative z-10 w-60 h-60 rounded-full overflow-hidden border-4 border-white">
+                    <Image
+                      src="/Sahil.webp"
+                      alt="Sahil Ansari"
+                      width={240}
+                      height={240}
+                      className="rounded-full w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* Orbiting Dots */}
+                  {[...Array(3)].map((_, i) => (
+                    <motion.div
+                      key={i}
+                      className="absolute w-3 h-3 bg-linear-to-r from-cyan-500 to-purple-600 rounded-full"
+                      style={{
+                        top: "50%",
+                        left: "50%",
+                      }}
+                      animate={{
+                        rotate: 360,
+                        x: [0, 140 * Math.cos((i * 120 * Math.PI) / 180)],
+                        y: [0, 140 * Math.sin((i * 120 * Math.PI) / 180)],
+                      }}
+                      transition={{
+                        duration: 6,
+                        repeat: Infinity,
+                        ease: "linear",
+                        delay: i * 0.5,
+                      }}
+                    />
+                  ))}
                 </motion.div>
               </motion.div>
+
+              {/* Corner Decorative Elements */}
+              <motion.div
+                className="absolute -top-8 -right-8 w-16 h-16 border-4 border-cyan-400 rounded-2xl"
+                animate={{
+                  rotate: [0, 90, 180, 270, 360],
+                }}
+                transition={{
+                  duration: 20,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+              />
+              <motion.div
+                className="absolute -bottom-8 -left-8 w-20 h-20 border-4 border-purple-400 rounded-full"
+                animate={{
+                  scale: [1, 1.1, 1],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
             </div>
           </motion.div>
         </div>
