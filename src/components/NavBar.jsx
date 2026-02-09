@@ -63,7 +63,7 @@ export default function NavBar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="fixed top-0 w-full bg-white/80 backdrop-blur-lg z-50 border-b border-gray-200"
+      className="fixed select-none top-0 w-full bg-white/80 backdrop-blur-lg z-50 border-b border-gray-200"
     >
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">

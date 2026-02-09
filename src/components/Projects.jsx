@@ -144,7 +144,11 @@ export default function Projects() {
 
   return (
     <>
-      <section id="projects" className="py-20 bg-slate-50" ref={ref}>
+      <section
+        id="projects"
+        className="py-20 select-none bg-slate-50"
+        ref={ref}
+      >
         <div className="max-w-6xl mx-auto px-6">
           {/* Section Heading */}
           <motion.div

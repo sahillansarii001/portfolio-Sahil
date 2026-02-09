@@ -276,7 +276,7 @@ export default function Certifications() {
 
   return (
     <>
-      <section id="certifications" className="py-20 bg-slate-50">
+      <section id="certifications" className="py-20 select-none bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
             className="text-center mb-16"

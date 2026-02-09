@@ -68,7 +68,7 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="py-20 bg-white" ref={ref}>
+    <section id="about" className="py-20 select-none bg-white" ref={ref}>
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Heading */}
         <motion.div

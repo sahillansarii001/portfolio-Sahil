@@ -51,7 +51,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center pt-20 bg-linear-to-br from-slate-50 via-cyan-50 to-purple-50"
+      className="min-h-screen select-none flex items-center pt-20 bg-linear-to-br from-slate-50 via-cyan-50 to-purple-50"
     >
       <div className="max-w-6xl mx-auto px-6 py-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -224,6 +224,7 @@ export default function Hero() {
                     alt="Sahil Ansari"
                     width={240}
                     height={240}
+                    priority
                     className="rounded-full"
                   />
                 </motion.div>
