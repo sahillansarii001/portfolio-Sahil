@@ -427,7 +427,7 @@ export default function Skills() {
         glow: "group-hover:shadow-gray-200",
       },
       slate: {
-        bg: "from-slate-200 via-slate-100 to-white",
+        bg: "from-slate-200 via-slate-200 to-slate-200",
         border: "hover:border-black",
         progress: "bg-gradient-to-r from-black to-slate-700",
         text: "text-slate-900",
@@ -443,7 +443,7 @@ export default function Skills() {
       },
 
       lime: {
-        bg: "from-lime-50 via-lime-50 to-green-50",
+        bg: "from-lime-50 via-lime-50 to-lime-50",
         border: "hover:border-lime-500",
         progress: "bg-gradient-to-r from-lime-500 to-green-600",
         text: "text-lime-700",
@@ -451,7 +451,7 @@ export default function Skills() {
       },
 
       neutral: {
-        bg: "from-gray-200 via-gray-100 to-white",
+        bg: "from-gray-200 via-gray-200 to-gray-200",
         border: "hover:border-gray-700",
         progress: "bg-gradient-to-r from-gray-800 to-gray-600",
         text: "text-gray-900",
@@ -459,7 +459,7 @@ export default function Skills() {
       },
 
       emerald: {
-        bg: "from-emerald-50 via-emerald-50 to-green-100",
+        bg: "from-emerald-50 via-emerald-50 to-emerald-50",
         border: "hover:border-emerald-500",
         progress: "bg-gradient-to-r from-emerald-500 to-green-700",
         text: "text-emerald-700",
@@ -467,7 +467,7 @@ export default function Skills() {
       },
 
       amber: {
-        bg: "from-amber-50 via-amber-50 to-yellow-50",
+        bg: "from-amber-50 via-amber-50 to-amber-50",
         border: "hover:border-amber-400",
         progress: "bg-gradient-to-r from-amber-400 to-orange-500",
         text: "text-amber-600",
@@ -475,7 +475,7 @@ export default function Skills() {
       },
 
       slateBlue: {
-        bg: "from-slate-100 via-slate-50 to-indigo-100",
+        bg: "from-indigo-100 via-indigo-50 to-indigo-100",
         border: "hover:border-slate-500",
         progress: "bg-gradient-to-r from-slate-700 to-indigo-800",
         text: "text-slate-800",
