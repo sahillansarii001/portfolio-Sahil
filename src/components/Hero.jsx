@@ -131,7 +131,7 @@ export default function Hero() {
               <motion.a
                 href="https://github.com/sahillansarii001"
                 target="_blank"
-                className="w-12 h-12 bg-white border border-black rounded-full flex items-center justify-center hover:border-cyan-500 hover:text-cyan-500 transition-all"
+                className="w-12 h-12 bg-white border rounded-full flex items-center justify-center border-black text-black transition-all"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -147,7 +147,7 @@ export default function Hero() {
               <motion.a
                 href="https://www.linkedin.com/in/sahil-ansari-50570b378"
                 target="_blank"
-                className="w-12 h-12 bg-white border border-black rounded-full flex items-center justify-center hover:border-blue-600 hover:text-blue-600 transition-all"
+                className="w-12 h-12 bg-white border rounded-full flex items-center justify-center border-blue-600 text-blue-600 transition-all"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -163,7 +163,7 @@ export default function Hero() {
               <motion.a
                 href="https://www.instagram.com/saahillansari"
                 target="_blank"
-                className="w-12 h-12 bg-white border border-black rounded-full flex items-center justify-center hover:border-pink-500 hover:text-pink-500 transition-all"
+                className="w-12 h-12 bg-white border rounded-full flex items-center justify-center border-pink-500 text-pink-500 transition-all"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.9 }}
               >
