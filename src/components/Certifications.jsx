@@ -332,11 +332,11 @@ export default function Certifications() {
                 transition={{ duration: 0.3 }}
               >
                 {/* Certificate Image */}
-                <div className="h-48 bg-linear-to-br from-cyan-50 to-purple-50 flex items-center justify-center relative overflow-hidden">
+                <div className="sm:h-65 h-48 bg-linear-to-br from-cyan-50 to-purple-50 flex items-center justify-center relative overflow-hidden">
                   <motion.img
                     src={cert.image}
                     alt={cert.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover sm:object-fill"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                   />
@@ -496,7 +496,7 @@ export default function Certifications() {
               exit="exit"
             >
               <motion.div
-                className="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-hidden shadow-2xl flex flex-col"
+                className="bg-white rounded-3xl max-w-xl w-full max-h-[90vh] overflow-hidden shadow-2xl flex flex-col"
                 onClick={(e) => e.stopPropagation()}
                 variants={modalContentVariants}
               >
@@ -816,58 +816,6 @@ export default function Certifications() {
                           )}
                         </div>
                       </motion.div>
-
-                      {/* Verification Link */}
-                      {selectedCert.verificationLink && (
-                        <motion.div
-                          className="pt-2 flex justify-center"
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.4, delay: 0.8 }}
-                        >
-                          <motion.div
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                          >
-                            <Link
-                              href={selectedCert.verificationLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center gap-2 px-6 py-3 bg-linear-to-r from-cyan-500 to-purple-600 text-white font-semibold text-sm rounded-xl hover:shadow-xl transition-all duration-300 group"
-                            >
-                              <svg
-                                className="w-5 h-5"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth="2"
-                                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                                />
-                              </svg>
-                              View Certificate
-                              <motion.svg
-                                className="w-4 h-4"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                whileHover={{ x: 4, y: -4 }}
-                                transition={{ duration: 0.2 }}
-                              >
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth="2"
-                                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                                />
-                              </motion.svg>
-                            </Link>
-                          </motion.div>
-                        </motion.div>
-                      )}
                     </div>
                   </div>
                 </div>

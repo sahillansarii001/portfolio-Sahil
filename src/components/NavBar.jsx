@@ -129,9 +129,21 @@ export default function NavBar() {
               Skills
             </motion.a>
             <motion.a
-              href="#contact"
+              href="#certifications"
               className="text-gray-700 hover:text-cyan-500 transition-colors font-medium"
               custom={4}
+              initial="hidden"
+              animate="visible"
+              variants={menuItemVariants}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Certifications
+            </motion.a>
+            <motion.a
+              href="#contact"
+              className="text-gray-700 hover:text-cyan-500 transition-colors font-medium"
+              custom={5}
               initial="hidden"
               animate="visible"
               variants={menuItemVariants}
@@ -143,7 +155,7 @@ export default function NavBar() {
             <motion.a
               href="#contact"
               className="px-6 py-2 bg-linear-to-r from-cyan-500 to-purple-600 text-white rounded-full hover:shadow-lg transform hover:scale-105 transition-all"
-              custom={5}
+              custom={6}
               initial="hidden"
               animate="visible"
               variants={menuItemVariants}
@@ -260,10 +272,20 @@ export default function NavBar() {
                   Skills
                 </motion.a>
                 <motion.a
-                  href="#contact"
+                  href="#certifications"
                   onClick={closeMobileMenu}
                   className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 border-b border-gray-100"
                   custom={4}
+                  variants={mobileItemVariants}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Certifications
+                </motion.a>
+                <motion.a
+                  href="#contact"
+                  onClick={closeMobileMenu}
+                  className="text-gray-700 hover:text-cyan-500 transition-colors font-medium py-2 border-b border-gray-100"
+                  custom={5}
                   variants={mobileItemVariants}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -273,7 +295,7 @@ export default function NavBar() {
                   href="#contact"
                   onClick={closeMobileMenu}
                   className="px-6 py-3 bg-linear-to-r from-cyan-500 to-purple-600 text-white rounded-full text-center hover:shadow-lg transform hover:scale-105 transition-all font-medium"
-                  custom={5}
+                  custom={6}
                   variants={mobileItemVariants}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

@@ -319,11 +319,11 @@ export default function Projects() {
                         whileHover={{ y: -8, scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                       >
-                        <div className="h-48 relative overflow-hidden">
+                        <div className="relative overflow-hidden bg-gray-100">
                           <motion.img
                             src={project.image}
                             alt={project.title}
-                            className="h-full w-full object-cover"
+                            className="w-full h-auto object-contain"
                             whileHover={{ scale: 1.1 }}
                             transition={{ duration: 0.3 }}
                           />
@@ -408,11 +408,11 @@ export default function Projects() {
                         whileHover={{ y: -8, scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                       >
-                        <div className="h-48 relative overflow-hidden">
+                        <div className="relative overflow-hidden bg-gray-100">
                           <motion.img
                             src={project.image}
                             alt={project.title}
-                            className="h-full w-full object-cover object-top"
+                            className="w-full h-auto object-contain"
                             whileHover={{ scale: 1.1 }}
                             transition={{ duration: 0.3 }}
                           />
