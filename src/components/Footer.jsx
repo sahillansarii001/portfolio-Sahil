@@ -241,7 +241,7 @@ export default function Footer() {
             <motion.span
               className="inline-block"
               animate={{
-                scale: [1, 1.2, 1],
+                scale: [1.2, 1, 1.2],
               }}
               transition={{
                 duration: 1,
