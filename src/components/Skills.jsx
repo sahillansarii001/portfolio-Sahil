@@ -132,7 +132,7 @@ export default function Skills() {
       yearsOfExperience: "6 Months",
       icon: (
         <svg
-          className="w-10 h-10 text-blue-700"
+          className="w-10 h-10 text-black"
           fill="currentColor"
           viewBox="0 0 24 24"
         >
