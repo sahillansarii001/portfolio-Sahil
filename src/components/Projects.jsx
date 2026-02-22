@@ -617,7 +617,7 @@ export default function Projects() {
                           href={selectedProject.figma}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-8 py-4 bg-linear-to-r from-purple-500 to-pink-600 text-white rounded-xl font-bold hover:shadow-xl transition-all transform hover:scale-105"
+                          className="flex items-center gap-2 px-8 py-4 bg-linear-to-r from-[#F24E1E] via-[#A259FF] to-[#1ABCFE] text-white rounded-xl font-bold hover:shadow-xl transition-all transform hover:scale-105"
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
@@ -626,11 +626,26 @@ export default function Projects() {
                             fill="currentColor"
                             viewBox="0 0 24 24"
                           >
-                            <path d="M8 24c2.208 0 4-1.792 4-4v-4H8c-2.208 0-4 1.792-4 4s1.792 4 4 4z" />
-                            <path d="M4 12c0-2.208 1.792-4 4-4h4v8H8c-2.208 0-4-1.792-4-4z" />
-                            <path d="M4 4c0-2.208 1.792-4 4-4h4v8H8C5.792 8 4 6.208 4 4z" />
-                            <path d="M12 0h4c2.208 0 4 1.792 4 4s-1.792 4-4 4h-4V0z" />
-                            <path d="M20 12c0 2.208-1.792 4-4 4s-4-1.792-4-4 1.792-4 4-4 4 1.792 4 4z" />
+                            <path
+                              fill="#0ACF83"
+                              d="M8 24c2.208 0 4-1.792 4-4v-4H8c-2.208 0-4 1.792-4 4s1.792 4 4 4z"
+                            />
+                            <path
+                              fill="#A259FF"
+                              d="M4 12c0-2.208 1.792-4 4-4h4v8H8c-2.208 0-4-1.792-4-4z"
+                            />
+                            <path
+                              fill="#F24E1E"
+                              d="M4 4c0-2.208 1.792-4 4-4h4v8H8C5.792 8 4 6.208 4 4z"
+                            />
+                            <path
+                              fill="#FF7262"
+                              d="M12 0h4c2.208 0 4 1.792 4 4s-1.792 4-4 4h-4V0z"
+                            />
+                            <path
+                              fill="#1ABCFE"
+                              d="M20 12c0 2.208-1.792 4-4 4s-4-1.792-4-4 1.792-4 4-4 4 1.792 4 4z"
+                            />
                           </svg>
                           View in Figma
                         </motion.a>
