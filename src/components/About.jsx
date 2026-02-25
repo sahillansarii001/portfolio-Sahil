@@ -242,7 +242,7 @@ export default function About() {
                   }
                   transition={{ delay: 0.5, duration: 0.5, ease: "easeOut" }}
                 >
-                  8+
+                  15+
                 </motion.div>
                 <div className="text-gray-600 font-medium">Skills Mastered</div>
               </motion.div>
