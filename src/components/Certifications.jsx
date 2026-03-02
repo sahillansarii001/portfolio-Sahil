@@ -204,6 +204,34 @@ export default function Certifications() {
       provider: "IBM SkillsBuild Network",
       platform: "skillsbuild.ibmclientcenter.cn",
     },
+    {
+      id: 7,
+      title: "Figma Bootcamp",
+      issuer: "LetsUpgrade",
+      date: "January 2–3, 2026",
+      image: "/figma-bootcamp.png",
+      verificationLink:
+        "https://verify.letsupgrade.in/certificate/LUEFGJAN126110",
+      certificateId: "LUEFGJAN126110",
+      skills: [
+        "Figma",
+        "UI Design",
+        "Wireframing",
+        "Prototyping",
+        "Design Collaboration",
+      ],
+      description:
+        "Successfully completed a 2-day Figma Bootcamp conducted by LetsUpgrade in collaboration with NSDC and ITM Edutech Training Pvt. Ltd.",
+      detailedDescription:
+        "This intensive 2-day bootcamp focused on practical UI/UX design using Figma. Key learnings included creating wireframes, designing modern user interfaces, building interactive prototypes, and understanding collaborative design workflows using Figma tools.",
+      achievements: [
+        "Designed wireframes using Figma",
+        "Created interactive prototypes",
+        "Built modern UI layouts",
+        "Worked on real-world design tasks",
+      ],
+      instructors: ["Led by expert designers from LetsUpgrade"],
+    },
   ];
 
   const openModal = (cert) => {
@@ -332,7 +360,7 @@ export default function Certifications() {
                 transition={{ duration: 0.3 }}
               >
                 {/* Certificate Image */}
-                <div className="sm:h-65 h-48 bg-linear-to-br from-cyan-50 to-purple-50 flex items-center justify-center relative overflow-hidden">
+                <div className="sm:h-65 h-60 bg-linear-to-br from-cyan-50 to-purple-50 flex items-center justify-center relative overflow-hidden">
                   <motion.img
                     src={cert.image}
                     alt={cert.title}
