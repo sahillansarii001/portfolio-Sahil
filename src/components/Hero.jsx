@@ -187,7 +187,7 @@ export default function Hero() {
           >
             <div className="relative z-10">
               <motion.div
-                className="sm:w-120 sm:h-96 w-85 h-85 mx-auto bg-linear-to-br from-cyan-400 via-purple-500 to-pink-500 rounded-3xl shadow-2xl transform rotate-3 overflow-hidden"
+                className="sm:w-120 sm:h-96 w-full h-90 mx-auto bg-linear-to-br from-cyan-400 via-purple-500 to-pink-500 rounded-3xl shadow-2xl transform rotate-3 overflow-hidden"
                 animate={{
                   rotate: [3, 5, 3],
                 }}
@@ -198,7 +198,7 @@ export default function Hero() {
                 }}
               ></motion.div>
               <motion.div
-                className="absolute inset-0 sm:w-120 sm:h-96 w-85 h-85 mx-auto bg-linear-to-br from-purple-400 via-pink-500 to-red-500 rounded-3xl shadow-2xl transform -rotate-3 overflow-hidden"
+                className="absolute inset-0 sm:w-120 sm:h-96 w-full h-90 mx-auto bg-linear-to-br from-purple-400 via-pink-500 to-red-500 rounded-3xl shadow-2xl transform -rotate-3 overflow-hidden"
                 animate={{
                   rotate: [-3, -5, -3],
                 }}
@@ -220,7 +220,7 @@ export default function Hero() {
                   transition={{ duration: 0.3 }}
                 >
                   <Image
-                    src="/Sahil.webp"
+                    src="/Sahil.png"
                     alt="Sahil Ansari"
                     width={240}
                     height={240}
