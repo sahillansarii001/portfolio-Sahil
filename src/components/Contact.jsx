@@ -211,11 +211,7 @@ export default function Contact() {
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.95 }}
             >
-              <motion.div
-                className="w-12 h-12 bg-white group-hover:bg-gray-700 rounded-lg flex items-center justify-center transition-colors shrink-0"
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 0.6 }}
-              >
+              <motion.div className="w-12 h-12 bg-white group-hover:bg-gray-700 rounded-lg flex items-center justify-center transition-colors shrink-0">
                 <svg
                   className="w-7 h-7 text-gray-700 group-hover:text-white transition-colors"
                   fill="currentColor"
@@ -259,11 +255,7 @@ export default function Contact() {
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.95 }}
             >
-              <motion.div
-                className="w-12 h-12 bg-white group-hover:bg-blue-500 rounded-lg flex items-center justify-center transition-colors shrink-0"
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 0.6 }}
-              >
+              <motion.div className="w-12 h-12 bg-white group-hover:bg-blue-500 rounded-lg flex items-center justify-center transition-colors shrink-0">
                 <svg
                   className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors"
                   fill="currentColor"
@@ -307,11 +299,7 @@ export default function Contact() {
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.95 }}
             >
-              <motion.div
-                className="w-12 h-12 bg-white group-hover:bg-pink-400 rounded-lg flex items-center justify-center transition-colors shrink-0"
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 0.6 }}
-              >
+              <motion.div className="w-12 h-12 bg-white group-hover:bg-pink-400 rounded-lg flex items-center justify-center transition-colors shrink-0">
                 <svg
                   className="w-7 h-7 text-pink-600 group-hover:text-white transition-colors"
                   fill="currentColor"

@@ -233,162 +233,159 @@ export default function Certifications() {
       instructors: ["Led by expert designers from LetsUpgrade"],
     },
     {
-  id: 8,
-  title: "AI Fluency: Framework & Foundations",
-  issuer: "Anthropic",
-  date: "24 March, 2026",
-  image: "/ai-fluency-framework-foundations.png",
-  verificationLink: "http://verify.skilljar.com/c/it945ngycych",
-  certificateId: "it945ngycych",
-  skills: [
-    "AI Fundamentals",
-    "AI Frameworks",
-    "Prompt Engineering Basics",
-    "Responsible AI",
-    "Problem Solving"
-  ],
-  description:
-    "Completed foundational training on AI fluency covering frameworks and core concepts.",
-  detailedDescription:
-    "This course provided a strong foundation in AI, including frameworks, system thinking, and responsible usage. It focused on understanding how AI works and applying it in real-world scenarios.",
-  achievements: [
-    "Learned AI core concepts",
-    "Understood AI frameworks",
-    "Applied AI in practical scenarios",
-    "Developed structured thinking"
-  ],
-  instructors: ["Anthropic Team"]
-},
-{
-  id: 9,
-  title: "Claude 101",
-  issuer: "Anthropic",
-  date: "24 March, 2026",
-  image: "/claude-101.png",
-  verificationLink: "http://verify.skilljar.com/c/jumfv9bhqjma",
-  certificateId: "jumfv9bhqjma",
-  skills: [
-    "Claude AI",
-    "Prompt Engineering",
-    "AI Interaction",
-    "Conversational AI",
-    "Task Automation"
-  ],
-  description:
-    "Introductory course on effectively using Claude AI.",
-  detailedDescription:
-    "This course introduced Claude AI, focusing on prompt writing, interaction strategies, and using AI for productivity, problem-solving, and daily tasks.",
-  achievements: [
-    "Mastered basic prompting",
-    "Improved AI communication",
-    "Used AI for automation tasks"
-  ],
-  instructors: ["Anthropic Team"]
-},
-{
-  id: 10,
-  title: "AI Fluency for Students",
-  issuer: "Anthropic",
-  date: "24 March, 2026",
-  image: "/ai-fluency-students.png",
-  verificationLink: "http://verify.skilljar.com/c/8aprogwnx9bg",
-  certificateId: "8aprogwnx9bg",
-  skills: [
-    "AI for Learning",
-    "Student Productivity",
-    "Research Assistance",
-    "Digital Literacy",
-    "Time Management"
-  ],
-  description:
-    "Focused on helping students use AI tools for learning and productivity.",
-  detailedDescription:
-    "This course guided students on using AI for studying, completing assignments, research, and improving academic performance efficiently.",
-  achievements: [
-    "Used AI for academic tasks",
-    "Improved research workflow",
-    "Enhanced study efficiency"
-  ],
-  instructors: ["Anthropic Team"]
-},
-{
-  id: 11,
-  title: "Teaching the AI Fluency Framework",
-  issuer: "Anthropic",
-  date: "24 March, 2026",
-  image: "/teaching-ai-fluency-framework.png",
-  verificationLink: "http://verify.skilljar.com/c/kh8e92mjmk5m",
-  certificateId: "kh8e92mjmk5m",
-  skills: [
-    "AI Teaching",
-    "Curriculum Design",
-    "EdTech",
-    "Instructional Methods",
-    "AI Integration"
-  ],
-  description:
-    "Focused on teaching AI fluency frameworks effectively.",
-  detailedDescription:
-    "This course explored how to teach AI concepts, frameworks, and tools in an educational setting, focusing on structured learning and real-world applications.",
-  achievements: [
-    "Learned AI teaching strategies",
-    "Designed learning approaches",
-    "Applied AI in education systems"
-  ],
-  instructors: ["Anthropic Team"]
-},
-{
-  id: 12,
-  title: "AI Fluency for Educators",
-  issuer: "Anthropic",
-  date: "24 March, 2026",
-  image: "/ai-fluency-educators.png",
-  verificationLink: "http://verify.skilljar.com/c/nwg75n6zoqmd",
-  certificateId: "nwg75n6zoqmd",
-  skills: [
-    "AI in Education",
-    "Teaching Tools",
-    "Automation",
-    "Student Engagement",
-    "Digital Transformation"
-  ],
-  description:
-    "Focused on integrating AI into teaching practices.",
-  detailedDescription:
-    "This course helped educators understand how to use AI tools to enhance teaching, automate repetitive tasks, and improve student outcomes.",
-  achievements: [
-    "Integrated AI into classrooms",
-    "Improved engagement techniques",
-    "Used AI for automation"
-  ],
-  instructors: ["Anthropic Team"]
-},
-{
-  id: 13,
-  title: "AI Fluency for Nonprofits",
-  issuer: "Anthropic & GivingTuesday",
-  date: "24 March, 2026",
-  image: "/ai-fluency-nonprofits.png",
-  verificationLink: "http://verify.skilljar.com/c/ra489dpd77s4",
-  certificateId: "ra489dpd77s4",
-  skills: [
-    "AI for Social Impact",
-    "Nonprofit Operations",
-    "Data Analysis",
-    "Automation",
-    "Decision Making"
-  ],
-  description:
-    "Focused on using AI in nonprofit and social impact organizations.",
-  detailedDescription:
-    "This course explored how nonprofits can leverage AI for fundraising, communication, operations, and improving overall impact.",
-  achievements: [
-    "Applied AI in nonprofit workflows",
-    "Improved operational efficiency",
-    "Used AI for decision making"
-  ],
-  instructors: ["Anthropic Team", "GivingTuesday Team"]
-}
+      id: 8,
+      title: "AI Fluency: Framework & Foundations",
+      issuer: "Anthropic",
+      date: "24 March, 2026",
+      image: "/ai-fluency-framework-foundations.png",
+      verificationLink: "http://verify.skilljar.com/c/it945ngycych",
+      certificateId: "it945ngycych",
+      skills: [
+        "AI Fundamentals",
+        "AI Frameworks",
+        "Prompt Engineering Basics",
+        "Responsible AI",
+        "Problem Solving",
+      ],
+      description:
+        "Completed foundational training on AI fluency covering frameworks and core concepts.",
+      detailedDescription:
+        "This course provided a strong foundation in AI, including frameworks, system thinking, and responsible usage. It focused on understanding how AI works and applying it in real-world scenarios.",
+      achievements: [
+        "Learned AI core concepts",
+        "Understood AI frameworks",
+        "Applied AI in practical scenarios",
+        "Developed structured thinking",
+      ],
+      instructors: ["Anthropic Team"],
+    },
+    {
+      id: 9,
+      title: "Claude 101",
+      issuer: "Anthropic",
+      date: "24 March, 2026",
+      image: "/claude-101.png",
+      verificationLink: "http://verify.skilljar.com/c/jumfv9bhqjma",
+      certificateId: "jumfv9bhqjma",
+      skills: [
+        "Claude AI",
+        "Prompt Engineering",
+        "AI Interaction",
+        "Conversational AI",
+        "Task Automation",
+      ],
+      description: "Introductory course on effectively using Claude AI.",
+      detailedDescription:
+        "This course introduced Claude AI, focusing on prompt writing, interaction strategies, and using AI for productivity, problem-solving, and daily tasks.",
+      achievements: [
+        "Mastered basic prompting",
+        "Improved AI communication",
+        "Used AI for automation tasks",
+      ],
+      instructors: ["Anthropic Team"],
+    },
+    {
+      id: 10,
+      title: "AI Fluency for Students",
+      issuer: "Anthropic",
+      date: "24 March, 2026",
+      image: "/ai-fluency-students.png",
+      verificationLink: "http://verify.skilljar.com/c/8aprogwnx9bg",
+      certificateId: "8aprogwnx9bg",
+      skills: [
+        "AI for Learning",
+        "Student Productivity",
+        "Research Assistance",
+        "Digital Literacy",
+        "Time Management",
+      ],
+      description:
+        "Focused on helping students use AI tools for learning and productivity.",
+      detailedDescription:
+        "This course guided students on using AI for studying, completing assignments, research, and improving academic performance efficiently.",
+      achievements: [
+        "Used AI for academic tasks",
+        "Improved research workflow",
+        "Enhanced study efficiency",
+      ],
+      instructors: ["Anthropic Team"],
+    },
+    {
+      id: 11,
+      title: "Teaching the AI Fluency Framework",
+      issuer: "Anthropic",
+      date: "24 March, 2026",
+      image: "/teaching-ai-fluency-framework.png",
+      verificationLink: "http://verify.skilljar.com/c/kh8e92mjmk5m",
+      certificateId: "kh8e92mjmk5m",
+      skills: [
+        "AI Teaching",
+        "Curriculum Design",
+        "EdTech",
+        "Instructional Methods",
+        "AI Integration",
+      ],
+      description: "Focused on teaching AI fluency frameworks effectively.",
+      detailedDescription:
+        "This course explored how to teach AI concepts, frameworks, and tools in an educational setting, focusing on structured learning and real-world applications.",
+      achievements: [
+        "Learned AI teaching strategies",
+        "Designed learning approaches",
+        "Applied AI in education systems",
+      ],
+      instructors: ["Anthropic Team"],
+    },
+    {
+      id: 12,
+      title: "AI Fluency for Educators",
+      issuer: "Anthropic",
+      date: "24 March, 2026",
+      image: "/ai-fluency-educators.png",
+      verificationLink: "http://verify.skilljar.com/c/nwg75n6zoqmd",
+      certificateId: "nwg75n6zoqmd",
+      skills: [
+        "AI in Education",
+        "Teaching Tools",
+        "Automation",
+        "Student Engagement",
+        "Digital Transformation",
+      ],
+      description: "Focused on integrating AI into teaching practices.",
+      detailedDescription:
+        "This course helped educators understand how to use AI tools to enhance teaching, automate repetitive tasks, and improve student outcomes.",
+      achievements: [
+        "Integrated AI into classrooms",
+        "Improved engagement techniques",
+        "Used AI for automation",
+      ],
+      instructors: ["Anthropic Team"],
+    },
+    {
+      id: 13,
+      title: "AI Fluency for Nonprofits",
+      issuer: "Anthropic & GivingTuesday",
+      date: "24 March, 2026",
+      image: "/ai-fluency-nonprofits.png",
+      verificationLink: "http://verify.skilljar.com/c/ra489dpd77s4",
+      certificateId: "ra489dpd77s4",
+      skills: [
+        "AI for Social Impact",
+        "Nonprofit Operations",
+        "Data Analysis",
+        "Automation",
+        "Decision Making",
+      ],
+      description:
+        "Focused on using AI in nonprofit and social impact organizations.",
+      detailedDescription:
+        "This course explored how nonprofits can leverage AI for fundraising, communication, operations, and improving overall impact.",
+      achievements: [
+        "Applied AI in nonprofit workflows",
+        "Improved operational efficiency",
+        "Used AI for decision making",
+      ],
+      instructors: ["Anthropic Team", "GivingTuesday Team"],
+    },
   ];
 
   const openModal = (cert) => {

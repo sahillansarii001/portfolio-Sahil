@@ -679,11 +679,7 @@ export default function Skills() {
             whileHover={{ scale: 1.05, y: -5 }}
             transition={{ duration: 0.3 }}
           >
-            <motion.div
-              className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-cyan-500 to-purple-600 rounded-xl flex items-center justify-center"
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.6 }}
-            >
+            <motion.div className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-cyan-500 to-purple-600 rounded-xl flex items-center justify-center">
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
@@ -715,11 +711,7 @@ export default function Skills() {
             whileHover={{ scale: 1.05, y: -5 }}
             transition={{ duration: 0.3 }}
           >
-            <motion.div
-              className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center"
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.6 }}
-            >
+            <motion.div className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center">
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
@@ -751,11 +743,7 @@ export default function Skills() {
             whileHover={{ scale: 1.05, y: -5 }}
             transition={{ duration: 0.3 }}
           >
-            <motion.div
-              className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center"
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.6 }}
-            >
+            <motion.div className="w-14 h-14 mx-auto mb-4 bg-linear-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center">
               <svg
                 className="w-8 h-8 text-white"
                 fill="none"
