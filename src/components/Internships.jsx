@@ -26,10 +26,10 @@ export default function Internships() {
       duration: "4 Weeks",
       period: "March 10, 2026 – April 7, 2026",
       internId: "CTIS6786",
-      status: "ongoing",
+      status: "Completed",
       logo: "/codtech-logo.png",
       offerLetterImage: "/codtech-offer-letter.png",
-      completionCertImage: null,
+      completionCertImage: "/codtech-internship-certificate.jpeg",
       description:
         "Selected for a structured internship in Figma Web Development at an ISO 9001 certified IT company. The program focuses on UI/UX design, prototyping, and real-world web development workflows.",
       skills: ["Figma", "UI/UX Design", "Web Development", "Prototyping", "Wireframing"],
